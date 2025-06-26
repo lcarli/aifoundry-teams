@@ -31,12 +31,18 @@
         "groupchat"
       ],
       "supportsFiles": false,
-      "isNotificationOnly": false
+      "isNotificationOnly": false,
+      "supportsCalling": true,
+      "supportsVideo": false
     }
   ],
   "permissions": [
     "identity",
-    "messageTeamMembers"
+    "messageTeamMembers",
+    "audioVideo"
+  ],
+  "devicePermissions": [
+    "media"
   ],
   "validDomains": [
     "{{BOT_DOMAIN}}"
