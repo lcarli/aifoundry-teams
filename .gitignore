@@ -1,3 +1,10 @@
+# Local .env file with secrets
+.env
+
+# Compiled output
+dist/
+build/
+
 # Logs
 logs
 *.log
