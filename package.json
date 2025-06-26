@@ -1,0 +1,41 @@
+{
+  "name": "aifoundry-teams",
+  "version": "1.0.0",
+  "description": "Microsoft Teams app with AI Foundry integration and voice interaction capabilities",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npm run build && npm start",
+    "clean": "rimraf dist",
+    "lint": "echo \"No linting configured\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "keywords": [
+    "microsoft-teams",
+    "bot",
+    "ai-foundry",
+    "voice-interaction",
+    "speech-recognition"
+  ],
+  "author": "AI Foundry Teams Developer",
+  "license": "MIT",
+  "dependencies": {
+    "@microsoft/teamsfx": "^4.0.0",
+    "axios": "^1.10.0",
+    "botbuilder": "^4.17.0-blobs1",
+    "dotenv": "^16.5.0",
+    "microsoft-cognitiveservices-speech-sdk": "^1.44.1",
+    "restify": "^11.1.0"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^24.0.4",
+    "@types/restify": "^8.5.12",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  }
+}
