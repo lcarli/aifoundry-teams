@@ -18,6 +18,15 @@ A Microsoft Teams app that integrates with AI Foundry agent and provides voice i
 4. **AI Foundry**: API endpoint and access key
 5. **Node.js**: Version 16 or higher
 
+## Quick Start
+
+1. **Run the setup script**: `./setup.sh`
+2. **Configure environment**: Update `.env` with your credentials
+3. **Build and start**: `npm run dev`
+4. **Verify functionality**: `node verify.js`
+5. **Package for Teams**: `./package-teams-app.sh`
+6. **Deploy and test**: Upload the package to Teams
+
 ## Setup Instructions
 
 ### 1. Clone and Install
@@ -139,7 +148,13 @@ The bot will be available at `http://localhost:3978`
 - `npm run build`: Compile TypeScript to JavaScript
 - `npm start`: Start the production server
 - `npm run dev`: Build and start in one command
+- `npm test`: Run unit tests
+- `npm run test:watch`: Run tests in watch mode
+- `npm run test:coverage`: Run tests with coverage report
 - `npm run clean`: Remove compiled files
+- `./setup.sh`: Automated setup script
+- `./verify.js`: Verify bot functionality
+- `./package-teams-app.sh`: Create Teams app package
 
 ## Troubleshooting
 

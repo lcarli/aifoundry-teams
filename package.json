@@ -9,7 +9,9 @@
     "dev": "npm run build && npm start",
     "clean": "rimraf dist",
     "lint": "echo \"No linting configured\"",
-    "test": "echo \"No tests configured\""
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
   },
   "keywords": [
     "microsoft-teams",
@@ -29,8 +31,11 @@
     "restify": "^11.1.0"
   },
   "devDependencies": {
+    "@types/jest": "^30.0.0",
     "@types/node": "^24.0.4",
     "@types/restify": "^8.5.12",
+    "jest": "^30.0.3",
+    "ts-jest": "^29.4.0",
     "typescript": "^5.8.3"
   }
 }
